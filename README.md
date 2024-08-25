@@ -77,7 +77,3 @@ xcopy [新版字体所在文件夹] C:\Windows\Fonts
 直接安装 MacType 即可。安装完 MacType 以后，有时候会存在部分软件字体显示异常问题，这个可以通过 MacTray 中的进程管理，将该软件加入不渲染名单即可。
 
 这样蒸腾下来，99% 的情况下，UI 界面渲染可以达到 macOS 的程度了！终于可以安心使用 Windows 工作了！
-
-下面给出自己魔改的字体文件地址，有需求的同学自己下载，拿走不谢！
-
-链接: [https://pan.baidu.com/s/1AT3M9nRHfZFjEg8ARTWfjw](https://pan.baidu.com/s/1AT3M9nRHfZFjEg8ARTWfjw) 提取码: ik7i
