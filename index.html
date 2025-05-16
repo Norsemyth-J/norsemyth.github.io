@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Craft - 在线笔记</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- 左侧边栏 -->
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <div class="user-profile">
+                    <div class="avatar">用</div>
+                    <span>用户用户</span>
+                </div>
+            </div>
+            <div class="sidebar-menu">
+                <ul>
+                    <li><i class="fas fa-home"></i> 主页</li>
+                    <li><i class="fas fa-search"></i> 生成内容</li>
+                    <li><i class="fas fa-folder"></i> 共享文档</li>
+                    <li><i class="fas fa-star"></i> 收藏</li>
+                    <li><i class="fas fa-trash"></i> 垃圾桶</li>
+                </ul>
+            </div>
+            <div class="workspace">
+                <div class="workspace-header">
+                    <span>Smith's Space</span>
+                    <i class="fas fa-ellipsis-h"></i>
+                </div>
+                <div class="workspace-items">
+                    <div class="workspace-item">
+                        <i class="fas fa-file"></i>
+                        <span>笔记1</span>
+                    </div>
+                    <div class="workspace-item active">
+                        <i class="fas fa-file"></i>
+                        <span>Welcome to Craft</span>
+                    </div>
+                    <div class="workspace-item">
+                        <i class="fas fa-file"></i>
+                        <span>Getting Started</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 主内容区 -->
+        <div class="main-content">
+            <div class="content-header">
+                <div class="breadcrumb">
+                    <span>How to use Craft</span>
+                    <span>/</span>
+                    <span>Welcome to Craft</span>
+                </div>
+                <div class="header-actions">
+                    <i class="fas fa-user-circle"></i>
+                    <i class="fas fa-bell"></i>
+                    <i class="fas fa-cog"></i>
+                </div>
+            </div>
+            
+            <div class="editor-container">
+                <div class="editor-content">
+                    <h1 contenteditable="true">Welcome to Craft</h1>
+                    
+                    <div class="checklist">
+                        <div class="checklist-item">
+                            <input type="checkbox">
+                            <span contenteditable="true">古灵阁里面 花落知多少</span>
+                            <div class="item-meta">2024年02月01日</div>
+                        </div>
+                        <div class="checklist-item">
+                            <input type="checkbox">
+                            <span contenteditable="true">功能待完善</span>
+                        </div>
+                        <div class="checklist-item">
+                            <input type="checkbox" checked>
+                            <span contenteditable="true">创建不完整 对它说再见</span>
+                            <div class="item-meta"><i class="far fa-clock"></i> 2分钟前</div>
+                        </div>
+                    </div>
+                    
+                    <div class="note-block">
+                        <p contenteditable="true">Hi There! Thanks for downloading Craft! In this doc you can read more about <strong>how Craft can help you</strong>, and how <strong>it's different to other tools</strong> out there.</p>
+                    </div>
+                    
+                    <p contenteditable="true">Craft is a tool for capturing and sharing your thoughts. What differentiates Craft from other tools is that it:</p>
+                    
+                    <ul>
+                        <li>
+                            <p contenteditable="true">Allows you to <span class="highlight">write</span> and <span class="highlight">structure</span> content <strong>the way you want to</strong> - whether it is linear, structured, or a collection of linked/connected notes.</p>
+                        </li>
+                        <li>
+                            <p contenteditable="true">Is <span class="highlight">blazing fast</span> and works both <strong>offline</strong> and <strong>online</strong> - no more <span class="emoji">😓</span>spinners!</p>
+                        </li>
+                        <li>
+                            <p contenteditable="true">Has simple and frictionless ways to <strong>share</strong> and <span class="emoji">🤝</span> <strong>collaborate</strong>.</p>
+                        </li>
+                        <li>
+                            <p contenteditable="true">Has powerful <strong>export</strong> options so you can integrate it into your existing <span class="emoji">🔧</span> tools.</p>
+                        </li>
+                    </ul>
+                    
+                    <p contenteditable="true">In short, that's what Craft is. It's a tool we've built with great care and attention to detail — something we hope will help you capture, organize and share your thoughts in a way that brings a <span class="emoji">😊</span> on your face, rather than a <span class="emoji">🙁</span></p>
+                    
+                    <h2 contenteditable="true">How Craft is different</h2>
+                    
+                    <p contenteditable="true">Craft has a number of features that differentiate it from other notes/document apps you are probably using today. The most important are:</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- AI Copilot 功能 -->
+        <div class="copilot-sidebar">
+            <div class="copilot-header">
+                <div class="copilot-avatar">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <span class="copilot-title">@Builder</span>
+                <button class="copilot-close-btn"><i class="fas fa-times"></i></button>
+            </div>
+            
+            <div class="copilot-content">
+                <div class="copilot-message">
+                    <p>这篇文章主要讲述了craft的功能介绍</p>
+                </div>
+            </div>
+            
+            <div class="copilot-input-container">
+                <div class="copilot-input-tools">
+                    <span class="copilot-tag">@智能体</span>
+                    <button class="copilot-tool-btn"><i class="fas fa-hashtag"></i> 上下文</button>
+                    <button class="copilot-tool-btn"><i class="far fa-image"></i> 图片</button>
+                </div>
+                <div class="copilot-input-wrapper">
+                    <textarea class="copilot-input" placeholder="输入您的问题..." rows="1"></textarea>
+                    <div class="copilot-send-container">
+                        <div class="copilot-model">Claude-3.7-Sonnet</div>
+                        <button class="copilot-send-btn"><i class="fas fa-paper-plane"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

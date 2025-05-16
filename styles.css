@@ -1,0 +1,506 @@
+/* 全局样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+.app-container {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* 左侧边栏样式 */
+.sidebar {
+    width: 250px;
+    background-color: #f8f8f8;
+    border-right: 1px solid #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.sidebar-header {
+    padding: 15px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.avatar {
+    width: 30px;
+    height: 30px;
+    background-color: #e0e0e0;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+
+.sidebar-menu ul {
+    list-style: none;
+    padding: 10px 0;
+}
+
+.sidebar-menu li {
+    padding: 8px 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.sidebar-menu li:hover {
+    background-color: #f0f0f0;
+}
+
+.sidebar-menu i {
+    width: 20px;
+    text-align: center;
+    color: #666;
+}
+
+.workspace {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding-top: 15px;
+}
+
+.workspace-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px 10px;
+    font-weight: 500;
+}
+
+.workspace-items {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.workspace-item {
+    padding: 8px 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.workspace-item:hover {
+    background-color: #f0f0f0;
+}
+
+.workspace-item.active {
+    background-color: #e6f7ff;
+    border-left: 3px solid #1890ff;
+}
+
+.workspace-item i {
+    color: #999;
+}
+
+/* 主内容区样式 */
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    background-color: #fff;
+}
+
+.content-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    border-bottom: 1px solid #e0e0e0;
+    background-color: #fff;
+}
+
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+    color: #666;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.header-actions i {
+    font-size: 18px;
+    color: #666;
+    cursor: pointer;
+}
+
+.editor-container {
+    flex: 1;
+    padding: 20px 40px;
+    overflow-y: auto;
+}
+
+.editor-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* 编辑器内容样式 */
+.editor-content h1 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.editor-content h2 {
+    font-size: 22px;
+    font-weight: 500;
+    margin: 25px 0 15px;
+    color: #333;
+}
+
+.checklist {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.checklist-item {
+    display: flex;
+    align-items: flex-start;
+    padding: 5px 0;
+    position: relative;
+}
+
+.checklist-item input[type="checkbox"] {
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.checklist-item span {
+    flex: 1;
+}
+
+.item-meta {
+    font-size: 12px;
+    color: #999;
+    margin-top: 3px;
+    margin-left: 25px;
+}
+
+.note-block {
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 20px 0;
+}
+
+.editor-content p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.editor-content ul {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.editor-content li {
+    margin-bottom: 10px;
+}
+
+.highlight {
+    background-color: rgba(255, 230, 0, 0.2);
+    padding: 0 2px;
+}
+
+.emoji {
+    font-style: normal;
+}
+
+/* AI Copilot 样式 */
+.copilot-sidebar {
+    width: 300px;
+    background-color: #f8f8f8;
+    border-left: 1px solid #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    color: #333;
+    overflow: hidden;
+}
+
+.copilot-header {
+    display: flex;
+    align-items: center;
+    padding: 12px 15px;
+    border-bottom: 1px solid #e0e0e0;
+    background-color: #f8f8f8;
+}
+
+.copilot-avatar {
+    width: 24px;
+    height: 24px;
+    background-color: #1890ff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8px;
+    font-size: 12px;
+    color: #fff;
+}
+
+.copilot-title {
+    flex: 1;
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+}
+
+.copilot-close-btn {
+    background: none;
+    border: none;
+    color: #666;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.copilot-close-btn:hover {
+    color: #333;
+}
+
+.copilot-content {
+    flex: 1;
+    padding: 15px;
+    overflow-y: auto;
+    font-size: 14px;
+    line-height: 1.5;
+    background-color: #fff;
+}
+
+.copilot-message {
+    margin-bottom: 15px;
+}
+
+.copilot-message p {
+    margin-bottom: 10px;
+}
+
+.copilot-input-container {
+    border-top: 1px solid #e0e0e0;
+    padding: 10px 15px;
+    background-color: #f8f8f8;
+}
+
+.copilot-input-tools {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    gap: 8px;
+}
+
+.copilot-tag {
+    background-color: #f0f0f0;
+    color: #666;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    border: 1px solid #e0e0e0;
+}
+
+.copilot-tool-btn {
+    background-color: #f0f0f0;
+    color: #666;
+    border: 1px solid #e0e0e0;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.copilot-tool-btn:hover {
+    background-color: #e6f7ff;
+    border-color: #1890ff;
+    color: #1890ff;
+}
+
+.copilot-input-wrapper {
+    position: relative;
+}
+
+.copilot-input {
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    color: #333;
+    padding: 10px;
+    font-size: 14px;
+    resize: none;
+    outline: none;
+}
+
+.copilot-input:focus {
+    border-color: #1890ff;
+    box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.1);
+}
+
+.copilot-send-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 8px;
+}
+
+.copilot-model {
+    font-size: 12px;
+    color: #999;
+}
+
+.copilot-send-btn {
+    background-color: #1890ff;
+    color: #fff;
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.copilot-send-btn:hover {
+    background-color: #40a9ff;
+}
+
+/* 可编辑内容样式 */
+[contenteditable="true"]:focus {
+    outline: none;
+    background-color: rgba(0, 120, 255, 0.05);
+}
+
+/* 闪烁光标样式 */
+.cursor-blink {
+    display: inline-block;
+    width: 2px;
+    height: 16px;
+    background-color: #1890ff;
+    margin-left: 2px;
+    animation: blink 1s infinite;
+    vertical-align: middle;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+/* 用户消息和AI消息样式 */
+.user-message {
+    text-align: right;
+    margin-left: 20%;
+}
+
+.user-message p {
+    background-color: #1890ff;
+    color: #fff;
+    border-radius: 10px 10px 0 10px;
+    padding: 10px;
+    display: inline-block;
+    text-align: left;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.ai-message {
+    margin-right: 20%;
+}
+
+.ai-message p {
+    background-color: #f0f0f0;
+    color: #333;
+    border-radius: 10px 10px 10px 0;
+    padding: 10px;
+    display: inline-block;
+    border: 1px solid #e0e0e0;
+}
+
+/* Copilot最小化样式 */
+.copilot-sidebar.minimized {
+    width: 50px;
+    overflow: hidden;
+}
+
+.copilot-sidebar.minimized .copilot-content,
+.copilot-sidebar.minimized .copilot-input-container,
+.copilot-sidebar.minimized .copilot-title {
+    display: none;
+}
+
+/* 响应式设计 */
+@media (max-width: 1200px) {
+    .copilot-sidebar {
+        width: 250px;
+    }
+}
+
+@media (max-width: 992px) {
+    .sidebar {
+        width: 200px;
+    }
+    
+    .copilot-sidebar {
+        width: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        position: absolute;
+        left: -250px;
+        height: 100%;
+        z-index: 100;
+        transition: left 0.3s ease;
+    }
+    
+    .sidebar.show {
+        left: 0;
+    }
+    
+    .main-content {
+        width: 100%;
+    }
+    
+    .copilot-sidebar {
+        position: absolute;
+        right: 0;
+        height: 100%;
+        z-index: 100;
+    }
+}
